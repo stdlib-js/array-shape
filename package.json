@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-shape",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Determine (nested) array dimensions.",
   "license": "Apache-2.0",
   "author": {
