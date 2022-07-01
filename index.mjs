@@ -1,4 +1,0 @@
-// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import r from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-array-like-object@esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/string-format@esm/index.mjs";var e=r,n=t;function i(r,t){var n=t[0];return e(n)&&(r.push(n.length),i(r,n)),r}function s(r,t,n,i,a){var l,o,u;for(l=t[n],u=0;u<i.length;u++){if(o=i[u],!e(o)||o.length!==l)return n;if(a&&(o=s(r,t,n+1,o,n+1<r-1))<r)return o}return r}var a=function(r){var t,a;if(!e(r))throw new TypeError(n("invalid argument. Must provide an array-like object. Value: `%s`.",r));return i(t=[r.length],r),(a=t.length)>1&&(t.length=s(a,t,1,r,a>2)),t};export{a as default};
-//# sourceMappingURL=index.mjs.map
