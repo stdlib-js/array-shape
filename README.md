@@ -63,7 +63,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.arrayShape;
+})();
 })();
 </script>
 ```
@@ -122,6 +124,7 @@ var shape = arrayShape( arr );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-shape@umd/browser.js"></script>
 <script type="text/javascript">
+(function () {
 (function () {
 
 var arr = [ 1, 2, 3 ];
@@ -217,6 +220,7 @@ arr = [
 shape = arrayShape( arr );
 // returns [ 3, 1 ]
 
+})();
 })();
 </script>
 </body>
@@ -320,7 +324,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
