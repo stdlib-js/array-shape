@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,43 +16,39 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ArrayLike } from '@stdlib/types/array';
 
 /**
-* Determine (nested) array dimensions.
+* Determines (nested) array dimensions.
 *
-* @module @stdlib/array-shape
+* @param arr - array
+* @returns array shape
 *
 * @example
-* var arrayShape = require( '@stdlib/array-shape' );
-*
 * var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ];
 *
 * var shape = arrayShape( arr );
 * // returns [ 3, 3 ]
 *
 * @example
-* var arrayShape = require( '@stdlib/array-shape' );
-*
 * var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8 ] ];
 *
 * var shape = arrayShape( arr );
 * // returns [ 3 ]
 *
 * @example
-* var arrayShape = require( '@stdlib/array-shape' );
-*
 * var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], null ];
 *
 * var shape = arrayShape( arr );
 * // returns [ 3 ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function arrayShape( arr: ArrayLike<any> ): Array<number>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = arrayShape;
