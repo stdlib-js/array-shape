@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import arrayShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-shape@deno/mod.js';
+import arrayShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-shape@v0.1.0-deno/mod.js';
 ```
 
 #### arrayShape( arr )
@@ -104,7 +104,7 @@ var shape = arrayShape( arr );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import arrayShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-shape@deno/mod.js';
+import arrayShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-shape@v0.1.0-deno/mod.js';
 
 var arr = [ 1, 2, 3 ];
 var shape = arrayShape( arr );
