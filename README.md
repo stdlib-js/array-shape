@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import arrayShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-shape@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-shape/tags). For example,
+
+```javascript
 import arrayShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-shape@v0.2.3-esm/index.mjs';
 ```
 
@@ -109,7 +114,7 @@ var shape = arrayShape( arr );
 <body>
 <script type="module">
 
-import arrayShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-shape@v0.2.3-esm/index.mjs';
+import arrayShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-shape@esm/index.mjs';
 
 var arr = [ 1, 2, 3 ];
 var shape = arrayShape( arr );
